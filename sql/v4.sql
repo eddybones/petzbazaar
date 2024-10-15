@@ -1,0 +1,1 @@
+alter table shop_stock add column stack bool;

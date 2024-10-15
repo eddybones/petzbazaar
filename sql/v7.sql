@@ -1,0 +1,11 @@
+alter table clawmachine add column donationdate datetime not null default current_timestamp;
+alter table clawmachine add column claimid int unsigned;
+alter table clawmachine add CONSTRAINT `fk_claimid` FOREIGN KEY (`userid`) REFERENCES `users` (`id`);
+alter table users add column spin int not null default 0;
+alter table users add column spinresult int not null default 0;
+alter table users add column spindate date;
+update users set spindate = date_add(utc_date(), interval -1 day);
+alter table users add column spinclaim bool;
+alter table users add column wisdomdate date;
+update users set wisdomdate = date_add(utc_date(), interval -1 day);
+alter table users add column wisdomdraw int;

@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-d
+RewriteRule ^shop\/(.+?)$ shop.php?seller_name=$1 [L]

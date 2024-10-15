@@ -1,0 +1,393 @@
+html, body{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+	height: 100%;
+	margin: 0;
+	background-image: url(http://www.mythicsilence.com/malevolent/Images/bazaar/PBbackground.png);
+}
+
+main {
+	
+	margin: 0 auto;
+	/*display: flex;*/
+        flex-direction: column;
+        height: 100%;	
+}
+
+header {	
+	position: relative;
+	height: 275px;
+	background-image: url(http://www.mythicsilence.com/malevolent/Images/bazaar/PBHeader.png);
+	background-repeat: repeat-x;
+}
+
+header div {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#home {
+	width: 313px;
+	height: 219px;
+	display: inline-block;
+	background: url(http://www.mythicsilence.com/malevolent/Images/bazaar/PBLogo.png) 0px 0px;
+	background-repeat: no-repeat;
+}
+#nav {
+	width: 1046px;
+	height: 55px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	
+}
+#shop {
+	top: 7px;
+	left: 0px;
+	width: 126px;
+	height: 45px;
+	display: block;
+	position: absolute;
+	background: url(http://www.mythicsilence.com/malevolent/Images/bazaar/Bazaarnav2.png) 0px 0px;
+}
+#account {
+	top: 7px;
+	left: 126px;
+	width: 120px;
+	height: 45px;
+	display: block;
+	position: absolute;
+	background: url(http://www.mythicsilence.com/malevolent/Images/bazaar/Bazaarnav2.png) -126px 0px;
+}
+#messages {
+	top: 7px;
+	left: 246px;
+	width: 140px;
+	height: 45px;
+	display: block;
+	position: absolute;
+	background: url(http://www.mythicsilence.com/malevolent/Images/bazaar/Bazaarnav2.png) -246px 0px;
+}
+#marketplace {
+	top: 7px;
+	left: 386px;
+	width: 175px;
+	height: 45px;
+	display: block;
+	position: absolute;
+	background: url(http://www.mythicsilence.com/malevolent/Images/bazaar/Bazaarnav2.png) -386px 0px;
+}
+#auctions {
+	top: 7px;
+	left: 573px;
+	width: 179px;
+	height: 45px;
+	display: block;
+	position: absolute;
+	background: url(http://www.mythicsilence.com/malevolent/Images/bazaar/Bazaarnav2.png) -573px 0px;
+}
+#boutique {
+	top: 7px;
+	left: 772px;
+	width: 129px;
+	height: 45px;
+	display: block;
+	position: absolute;
+	background: url(http://www.mythicsilence.com/malevolent/Images/bazaar/Bazaarnav2.png) -772px 0px;
+}
+#townsquare {
+	top: 7px;
+	left: 900px;
+	width: 146px;
+	height: 45px;
+	display: block;
+	position: absolute;
+	background: url(http://www.mythicsilence.com/malevolent/Images/bazaar/Bazaarnav2.png) -900px 0px;
+}
+#userdash {
+	width: 705px;
+	height: 75px;
+	display: inline-block;
+	color: #cdd1d5;
+	position: relative;
+	top: -11px;
+	left: 8px;
+}
+#coinz {
+	margin-right: 10px;
+}
+
+#subject {
+	width: 65%;
+	padding: 5px 5px;
+	margin: 0 0;
+	display: inline-block;
+	border: 1px solid #544f76;
+	border-radius: 4px;
+	box-sizing: border-box;
+  } 
+  
+.messagestyle {
+	background-color: #f5f6da;
+	color: #3cb878;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.errorstyle {
+	background-color: #f5f6da;
+	color: #b83c3c;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+  
+.style2 {
+     font-size: 20px;
+	 color: #cdd1d5;
+	 margin-bottom: 18px;
+}
+.formdiv {
+	width:165px;
+	margin-top: 10px;
+	display: inline-block;
+  }
+
+.loginformdiv {
+	width:115px;
+	margin-top: 10px;
+	margin-right: 10px;
+	display: inline-block;
+  }
+.accountformdiv {
+	width:175px;
+	margin-top: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	text-align: right;
+  }
+
+
+
+.button {
+	background-color: #242a63;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 8px 10px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+  }
+.button:hover {
+	background-color: #544f76; 
+	color: white;
+}
+#grid {
+	width: 875px;
+	margin: 0 auto;
+	display: grid;
+	/* 3 columns, each consuming 33% of the width of this element */
+	grid-template-columns: 33% 33% 33%;
+	grid-gap: 15px;
+}
+
+.item {
+	width: 240px;
+	border: 1px solid #000;
+	padding: 10px;
+	background: #a397b5;
+	margin-bottom: 20px;
+}
+
+
+
+.item .image {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.item .image img {
+    position: absolute;
+    max-width: 220px;
+    max-height: 220px;
+    width: auto;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+.item h1 {
+	font-size: 14;
+	text-align: center;
+}
+
+.item .description {
+	max-height: 100px;
+	width: 220px;
+	overflow: auto;
+	margin-bottom: 10px;
+}	
+
+content {
+	padding: 10px;
+	text-align:center;
+	background: #bbb4c3; 
+	display: block;
+	border-style: solid;
+  	border-color: #242a63;
+	border-width: 6px;
+	border-radius: 10px;
+	/*height: 70%;*/
+	min-height: 700px;
+    width: 900px;
+    margin: 10px auto;
+	/*overflow-x: auto;
+	overflow-y: auto;
+	*/
+}
+
+#mute select, #mute div {
+	display: inline-block;
+}
+#mute select {
+	width: 200px;
+	height: 300px;
+}
+#mute #muteButtons {
+	position: relative;
+	vertical-align: top;
+	height: 300px;
+}
+#mute button {
+	position: relative;
+	top: 40%;
+	width: 80px;
+	margin-bottom: 10px;
+}
+#muteSubmit {
+	padding: 10px;
+}
+
+
+#bulb {
+	background: #bbb4c3 url("http://www.mythicsilence.com/malevolent/Images/bazaar/stringlights1.png") no-repeat bottom;
+	padding-bottom: 250px;
+	min-height: 550px;
+}
+
+#post {
+	background: #bbb4c3 url("http://www.mythicsilence.com/malevolent/Images/bazaar/lamppost.png") no-repeat bottom;
+	padding-bottom: 300px;
+	min-height: 400px;
+}
+
+a:link {color: #544f76; }    
+	a:visited {color: #544f76; }
+	a:hover {color: #000000; }
+	a:active {color: #544f76; } 
+
+
+.style1 a:link {color: white; }    
+.style1 a:visited {color: white; }
+.style1 a:hover {color: white; }
+.style1 a:active {color: white; } 
+        
+
+#content {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	column-count: 2;
+	column-gap: 200px;
+
+}
+.headings {
+	margin: 0 auto;
+	text-align: center;
+}
+#content2 {
+	width: 650px;
+	margin: 0 auto;
+	text-align: left;
+	column-count: 3;
+	column-gap: 110px;
+	
+}
+table{
+	border: 1px solid #544f76;
+	border-radius: 5px;
+  }
+th, td {
+	background-color: #FFFF;
+	border: 1px solid #544f76;
+	border-color: #544f76;
+	padding: 10px;
+}
+tr {
+	border: 1px solid #544f76;
+  }
+
+tr.unread td {
+	background-color: #f5f6da;
+}
+
+tr.stats td {
+	border: 1px solid #544f76;
+}
+
+input[type=number] {
+	width: 8%;
+	padding: 5px 5px;
+	margin: 0 0;
+	display: inline-block;
+	border: 1px solid #544f76;
+	border-radius: 4px;
+	box-sizing: border-box;
+  } 
+input[type=textarea] {
+	padding: 5px 5px;
+	margin: 0 0;
+	display: inline-block;
+	border-radius: 6px;
+	box-sizing: border-box;
+  } 
+input[type=password] {
+	width: 25%;
+	padding: 5px 5px;
+	margin: 5px 0;
+	display: inline-block;
+	border: 1px solid #544f76;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+input[type=text]  {
+	width: 25%;
+	padding: 5px 5px;
+	margin: 5px 0;
+	display: inline-block;
+	border: 1px solid #544f76;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }  
+
+
+
+  h1 {
+	
+	font-size: 16px;
+	
+  }
