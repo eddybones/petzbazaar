@@ -4,15 +4,17 @@
 function DBConnect() {
     $servername = "localhost";
 
-    if(($_SERVER['SERVER_NAME'] ?? 'mythicsilence.com') == 'mythicsilence.com') {
-        $DB = "";
-        $username = "";
-        $password = "";
-    } else {
+    if ($_SERVER['SERVER_NAME'] == 'localhost') {
         $DB = "PBazaar";
         $username = "root";
         $password = "password";
+    } else {
+        // Replace these values with the credentials of your database
+        $DB = "";
+        $username = "";
+        $password = "";
     }
+    
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $DB);
